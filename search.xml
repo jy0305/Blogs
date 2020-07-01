@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>leetcode_string</title>
+      <link href="/2020/07/01/leetcode-string/"/>
+      <url>/2020/07/01/leetcode-string/</url>
+      
+        <content type="html"><![CDATA[<h1 id="String"><a href="#String" class="headerlink" title="String"></a>String</h1><h2 id="Valid-Palindrome"><a href="#Valid-Palindrome" class="headerlink" title="Valid Palindrome"></a>Valid Palindrome</h2><h3 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h3><p>Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring<br>cases.<br>For example,<br>“A man, a plan, a canal: Panama” is a palindrome. “race a car” is not a palindrome.<br>Note: Have you consider that the string might be empty? This is a good question to ask during an<br>interview.<br>For the purpose of this problem, we define empty string as valid palindrome.</p><h3 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Valid Palindrome</span></span><br><span class="line"><span class="comment">// 时间复杂度O(n)，空间复杂度O(1)</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isPalindrome</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">        s = s.toLowerCase();</span><br><span class="line">        <span class="keyword">int</span> left = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> right = s.length() - <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span> (left &lt; right) &#123;</span><br><span class="line">            <span class="keyword">if</span> (!Character.isLetterOrDigit(s.charAt(left))) ++left;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (!Character.isLetterOrDigit(s.charAt(right))) --right;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (s.charAt(left) != s.charAt(right)) <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">            <span class="keyword">else</span> &#123; ++left; --right; &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Algorithm </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>java_strengthen</title>
       <link href="/2020/06/13/java-strengthen/"/>
       <url>/2020/06/13/java-strengthen/</url>
